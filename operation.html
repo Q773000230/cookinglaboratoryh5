@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable-no" />
+		<link rel="stylesheet" href="lib/css/bootstrap.min.css">
+		<link rel="stylesheet" href="lib/css/my.css">
+	</head>
+
+	<body>
+		<div class="container">
+
+			<div class="row stuta_title">
+				<span class="stuta_title_tex">荷包蛋烹饪技巧</span>
+				<span class="stuta_title_tex">胡歌</span>
+				<span class="stuta_title_tex">9:40 ～ 11:30</span>
+				<span class="stuta_title_tex">烹饪1室</span>
+			</div>
+
+			<div class="operation_conctent">
+				<div class="col-sm-1 left_nav">
+					<ul>
+						<li id="second_manual" style="background: #11C98E;">
+							<img class="second" src="lib/img/sencond_icon1.png"> <br />
+							<a href="">操作手册</a>
+						</li>
+						<li id="second_fragant">
+							<img class="second" src="lib/img/sencond_icon2.png"> <br />
+							<a href="">菜品集</a>
+						</li>
+						<li id="second_stadard">
+							<img class="second" src="lib/img/standart/sencond_icon3.png"> <br />
+							<a href="">评分标准</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="right_content_scroll">
+					<div class="col-sm-11  right_content" id="right_content">
+						<object type="text/html" data="manual.html" width="100%" height="100%"></object>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+		<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+		<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<script>
+			var oRight_content = document.getElementById('right_content');
+			var oManual = document.getElementById('second_manual');
+			var oFragant = document.getElementById('second_fragant');
+			var oStadard = document.getElementById('second_stadard');
+			var oRight_contentNull = oRight_content.innerText; //获取div里的内容
+
+			//      if (oRight_contentNull.length == 0){  //判断div里的内容长度是否为0
+			//              oRight_content.innerHTML =
+			//                  '<object type ="text/html" data="manual.html" width="100%"height="100%"></object>';
+			//              oManual.style.background = '#11C98E';
+			//      }
+
+			oManual.onclick = function() {
+				oRight_content.innerHTML =
+					'<object type ="text/html" data="manual.html" width="100%"height="100%"></object>';
+				oManual.style.background = '#11C98E';
+				oFragant.style.background = '#333';
+				oStadard.style.background = '#333';
+				return false;
+			};
+
+			oFragant.onclick = function() {
+				oRight_content.innerHTML =
+					'<object type ="text/html" data="fragrant.html" width="100%"height="100%"></object>';
+				oFragant.style.background = '#11C98E';
+				oManual.style.background = '#333';
+				oStadard.style.background = '#333';
+				return false;
+			};
+
+			oStadard.onclick = function() {
+				oRight_content.innerHTML =
+					'<object type ="text/html" data="standard.html" width="100%"height="100%"></object>';
+				oStadard.style.background = '#11C98E';
+				oFragant.style.background = '#333';
+				oManual.style.background = '#333';
+				return false;
+			}
+		</script>
+	</body>
+
+</html>

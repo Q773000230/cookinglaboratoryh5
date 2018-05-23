@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>点评</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable-no" />
+		<link rel="stylesheet" href="lib/css/bootstrap.min.css">
+		<link rel="stylesheet" href="lib/css/comment.css">
+
+		<script type="text/javascript" src="lib/jqueryraty/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="lib/jqueryraty/jquery.raty.js"></script>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-4 comment_left">
+				</div>
+
+				<div class="col-sm-8 comment_right">
+					<div class="comment_introduce">
+						<h1 class="comment_name">Some Meat</h1>
+						<p class="comment_intro">
+							用谷物的细粉或粗粉加上液体、油料和发酵剂和成生面,经过揉捏、定形、发酵并加以烘烤而制成的食品
+						</p>
+					</div>
+					<div class="comment_comment">
+						<div class="comment_row">
+							<div class="comment_each_name">
+								<div class="comment_each_name_bg">
+									<span class="comment_each_name_name">色泽</span>
+								</div>
+								<div class="comment_each_introduce">
+									<p class="comment_each_introduce_some">菜肴应有的颜色</p>
+									<p class="comment_each_introduce_some">芡汁透亮度及浓稠度</p>
+									<p class="comment_each_introduce_some">配料的搭配</p>
+									<p class="comment_each_introduce_some">配料与主料的合理性</p>
+								</div>
+
+								<div class="comment_each_star">
+									<!--<button class="comment_btn" id="comment_btn1">
+                                    <img src="lib/img/standart/sencond_icon6.png" id="img1">
+                                </button>
+									<button class="comment_btn" id="comment_btn2">
+                                    <img src="lib/img/standart/sencond_icon6.png" id="img2">
+                                </button>
+									<button class="comment_btn" id="comment_btn3">
+                                    <img src="lib/img/standart/sencond_icon7.png" id="img3">
+                                </button>
+									<button class="comment_btn" id="comment_btn4">
+                                    <img src="lib/img/standart/sencond_icon9.png" >
+                                </button>
+									<button class="comment_btn" id="comment_btn5">
+                                    <img src="lib/img/standart/sencond_icon9.png" >
+                                </button>-->
+
+									<div id="raty1" data-number="5" data-path="lib/img/standart"></div>
+								</div>
+
+							</div>
+							<div class="comment_each_name">
+								<div class="comment_each_name_bg">
+									<span class="comment_each_name_name">装盘</span>
+								</div>
+								<div class="comment_each_introduce">
+									<p class="comment_each_introduce_some">突出主料</p>
+									<p class="comment_each_introduce_some">不偏盘</p>
+									<p class="comment_each_introduce_some">装盘不散</p>
+									<p class="comment_each_introduce_some">成型好</p>
+									<p class="comment_each_introduce_some">盘边无油迹</p>
+								</div>
+								<div class="comment_each_star">
+									<div id="raty2" data-number="5" data-path="lib/img/standart"></div>
+								</div>
+							</div>
+						</div>
+						<div class="comment_row">
+							<div class="comment_each_name">
+								<div class="comment_each_name_bg">
+									<span class="comment_each_name_name">刀工</span>
+								</div>
+								<div class="comment_each_introduce">
+									<p class="comment_each_introduce_some">此菜的正确刀工</p>
+									<p class="comment_each_introduce_some">刀工粗细薄厚均匀</p>
+								</div>
+								<div class="comment_each_star">
+									<div id="raty3" data-number="5" data-path="lib/img/standart"></div>
+								</div>
+							</div>
+							<div class="comment_each_name">
+								<div class="comment_each_name_bg">
+									<span class="comment_each_name_name">火候</span>
+								</div>
+								<div class="comment_each_introduce">
+									<p class="comment_each_introduce_some">火候合适</p>
+									<p class="comment_each_introduce_some">口感老嫩程度</p>
+								</div>
+								<div class="comment_each_star">
+									<div id="raty4" data-number="5" data-path="lib/img/standart"></div>
+								</div>
+							</div>
+						</div>
+						<div class="comment_row">
+							<div class="comment_each_name">
+								<div class="comment_each_name_bg">
+									<span class="comment_each_name_name">口味</span>
+								</div>
+								<div class="comment_each_introduce">
+									<p class="comment_each_introduce_some">味型准确</p>
+									<p class="comment_each_introduce_some">应有的鲜香味</p>
+									<p class="comment_each_introduce_some">咸淡适应</p>
+								</div>
+								<div class="comment_each_star">
+									<div id="raty5" data-number="5" data-path="lib/img/standart"></div>
+								</div>
+							</div>
+							<div class="comment_each_name">
+								<div class="comment_each_name_bg">
+									<span class="comment_each_name_name">芡汁</span>
+								</div>
+								<div class="comment_each_introduce">
+									<p class="comment_each_introduce_some">量适合</p>
+									<p class="comment_each_introduce_some">浓度适宜</p>
+									<p class="comment_each_introduce_some">不滑</p>
+									<p class="comment_each_introduce_some">油量适宜</p>
+								</div>
+								<div class="comment_each_star">
+									<div id="raty6" data-number="5" data-path="lib/img/standart"></div>
+								</div>
+							</div>
+						</div>
+						<div class="comment_row">
+							<div class="comment_each_name" id="comment_last">
+								<div class="comment_each_name_bg">
+									<span class="comment_each_name_name">配料</span>
+								</div>
+								<div class="comment_each_introduce">
+									<p class="comment_each_introduce_some">颜色搭配合理</p>
+									<p class="comment_each_introduce_some">质地搭配合理</p>
+									<p class="comment_each_introduce_some">口味搭配合理</p>
+									<p class="comment_each_introduce_some">形状搭配合适</p>
+									<p class="comment_each_introduce_some">营养成分搭配合理</p>
+								</div>
+								<div class="comment_each_star">
+									<div id="raty7" data-number="5" data-path="lib/img/standart"></div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+
+			$('#raty1').raty({
+				path: function() { //图片路径
+					return this.getAttribute('data-path');
+				},
+				number: function() { //星星数量
+					return $(this).attr('data-number');
+				},
+				starOn: 'sencond_icon8.png', //激活星星图标
+				starOff: 'sencond_icon9.png', //未激活星星图标
+				halfShow: 'false', //是否显示半颗星星
+				hints: ['很差', '一般', '好', '很好', '非常好'], //等级的内容
+				//				target: '#ratydesc', //评分等级显示的div
+				targetType: 'hint', //评分等级显示的div
+				targetKeep: true, //固定显示评分结果
+				targetText: '请打分' //评分结果默认显示文字
+			});
+			
+					$('#raty2').raty({
+				path: function() { //图片路径
+					return this.getAttribute('data-path');
+				},
+				number: function() { //星星数量
+					return $(this).attr('data-number');
+				},
+				starOn: 'sencond_icon8.png', //激活星星图标
+				starOff: 'sencond_icon9.png', //未激活星星图标
+				halfShow: 'false', //是否显示半颗星星
+				hints: ['很差', '一般', '好', '很好', '非常好'], //等级的内容
+				//				target: '#ratydesc', //评分等级显示的div
+				targetType: 'hint', //评分等级显示的div
+				targetKeep: true, //固定显示评分结果
+				targetText: '请打分' //评分结果默认显示文字
+			});
+			
+					$('#raty3').raty({
+				path: function() { //图片路径
+					return this.getAttribute('data-path');
+				},
+				number: function() { //星星数量
+					return $(this).attr('data-number');
+				},
+				starOn: 'sencond_icon8.png', //激活星星图标
+				starOff: 'sencond_icon9.png', //未激活星星图标
+				halfShow: 'false', //是否显示半颗星星
+				hints: ['很差', '一般', '好', '很好', '非常好'], //等级的内容
+				//				target: '#ratydesc', //评分等级显示的div
+				targetType: 'hint', //评分等级显示的div
+				targetKeep: true, //固定显示评分结果
+				targetText: '请打分' //评分结果默认显示文字
+			});
+			
+					$('#raty4').raty({
+				path: function() { //图片路径
+					return this.getAttribute('data-path');
+				},
+				number: function() { //星星数量
+					return $(this).attr('data-number');
+				},
+				starOn: 'sencond_icon8.png', //激活星星图标
+				starOff: 'sencond_icon9.png', //未激活星星图标
+				halfShow: 'false', //是否显示半颗星星
+				hints: ['很差', '一般', '好', '很好', '非常好'], //等级的内容
+				//				target: '#ratydesc', //评分等级显示的div
+				targetType: 'hint', //评分等级显示的div
+				targetKeep: true, //固定显示评分结果
+				targetText: '请打分' //评分结果默认显示文字
+			});
+			
+					$('#raty5').raty({
+				path: function() { //图片路径
+					return this.getAttribute('data-path');
+				},
+				number: function() { //星星数量
+					return $(this).attr('data-number');
+				},
+				starOn: 'sencond_icon8.png', //激活星星图标
+				starOff: 'sencond_icon9.png', //未激活星星图标
+				halfShow: 'false', //是否显示半颗星星
+				hints: ['很差', '一般', '好', '很好', '非常好'], //等级的内容
+				//				target: '#ratydesc', //评分等级显示的div
+				targetType: 'hint', //评分等级显示的div
+				targetKeep: true, //固定显示评分结果
+				targetText: '请打分' //评分结果默认显示文字
+			});
+			
+					$('#raty6').raty({
+				path: function() { //图片路径
+					return this.getAttribute('data-path');
+				},
+				number: function() { //星星数量
+					return $(this).attr('data-number');
+				},
+				starOn: 'sencond_icon8.png', //激活星星图标
+				starOff: 'sencond_icon9.png', //未激活星星图标
+				halfShow: 'false', //是否显示半颗星星
+				hints: ['很差', '一般', '好', '很好', '非常好'], //等级的内容
+				//				target: '#ratydesc', //评分等级显示的div
+				targetType: 'hint', //评分等级显示的div
+				targetKeep: true, //固定显示评分结果
+				targetText: '请打分' //评分结果默认显示文字
+			});
+			
+					$('#raty7').raty({
+				path: function() { //图片路径
+					return this.getAttribute('data-path');
+				},
+				number: function() { //星星数量
+					return $(this).attr('data-number');
+				},
+				starOn: 'sencond_icon8.png', //激活星星图标
+				starOff: 'sencond_icon9.png', //未激活星星图标
+				halfShow: 'false', //是否显示半颗星星
+				hints: ['很差', '一般', '好', '很好', '非常好'], //等级的内容
+				//				target: '#ratydesc', //评分等级显示的div
+				targetType: 'hint', //评分等级显示的div
+				targetKeep: true, //固定显示评分结果
+				targetText: '请打分' //评分结果默认显示文字
+			});
+		</script>
+	</body>
+
+</html>
