@@ -1,15 +1,15 @@
 
 .comment_left {
     height:0;
-    padding-bottom:100%;
+    padding-bottom:85%;
     background-image:url(../img/3.jpg);
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center center;
 }
-.comment_right {
-    margin-top:72px;
-}
+/*.comment_right {
+
+}*/
 .comment_name {
     font-size:60px;
     color:#333;
